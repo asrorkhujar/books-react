@@ -8,7 +8,7 @@ let url = "../../assets/";
 
 function BookCard({title, imageLink, year, language, pages, author, link}) {
 // console.log(process.env.PUBLIC_URL+imageLink);
-  console.log(url+imageLink);
+  console.log(imageLink);
 
   return (
 <div className="books__item col-sm-6 col-md-4 mb-4">
