@@ -7,20 +7,20 @@ import Pagination from "./components/pagination/pagination";
 function App() {
   return (
     <>
-      <div className="books container-xl">
-        <Header />
-        <section>
-        <h2 className="visually-hidden">Books</h2>
-        <Filter />
-        <div className="books__list row">
-          {/* <p className="text-center">Books are coming... Please, wait.</p> */}
-          {books.map((book) => <BookCard {...book} />)}
-        </div>
-        <Pagination />
-      </section>
-      </div>
+    <div className="books container-xl">
+    <Header />
+    <section>
+    <h2 className="visually-hidden">Books</h2>
+    <Filter />
+    <div className="books__list row">
+    {/* <p className="text-center">Books are coming... Please, wait.</p> */}
+    {books.map((book) => <BookCard {...book} />)}
+    </div>
+    <Pagination />
+    </section>
+    </div>
     </>
-  );
-}
+    );
+  }
 
-export default App;
+  export default App;
