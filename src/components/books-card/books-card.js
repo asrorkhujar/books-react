@@ -4,17 +4,17 @@ import iconlibrary from "../../assets/images/icon-library_books.svg"
 import iconouthor from "../../assets/images/icon-author.svg"
 import iconwiki from "../../assets/images/wikipedia.svg"
 
-let url = "../../assets/";
+// let url = "../../assets/";
 
 function BookCard({title, imageLink, year, language, pages, author, link}) {
   // console.log(process.env.PUBLIC_URL+imageLink);
-  console.log(imageLink);
+  // console.log(imageLink);
 
   return (
     <div className="books__item col-sm-6 col-md-4 mb-4">
     <div className="book card h-100" style={{borderRadius: '15px', backgroundColor: '#fff8ee', border: '1px solid rgb(219, 215, 215)'}}>
     <div className="p-4 mx-auto">
-    <img className="book__img card-img-top" src={imageLink} alt="rasm" width={200} height={400} />
+    <img className="book__img card-img-top" src={"https://raw.githubusercontent.com/coder-1990/books/main/"+imageLink} alt="rasm" width={200} height={400} />
     </div>
     <div className="card-body d-flex flex-column">
     <h3 className="book__title h3 text-success card-title">{title}</h3>
