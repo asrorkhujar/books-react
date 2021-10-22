@@ -19,7 +19,7 @@ function Filter({setBooks}) {
     evt.preventDefault();
 
     const titleRegExp = new RegExp(inputValue, "gi");
-    let filteredBooks = findBooks(allBooks, titleRegExp, countryValue, minYear, languageValue);
+    let filteredBooks = findBooks(allBooks, titleRegExp, languageValue, countryValue, minYear);
     sortBooks(filteredBooks, selectValue);
     setBooks(filteredBooks);
   }
